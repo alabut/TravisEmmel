@@ -1,0 +1,6 @@
+TRAV'S WEBSITE
+* more blatant links to resume and etc on the about page
+* footer info
+* linkedin logo in footer
+* add a mailto: link to the contact button in the nav
+* copy his content over to the posts

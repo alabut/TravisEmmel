@@ -1,11 +1,11 @@
 ---
 layout: post
 
-title: Almost ready to go live
+title: Retrofittable Sliding Trays for Semiconductor Test Oven
 subtitle: "Birth of a fancy blog"
 cover_image: blog-cover.jpg
 
-excerpt: "I'm really starting to get to know Github Pages now..."
+excerpt: "I designed and fabricated a modular replacement system for component testing ovens at a local semiconductor company. I improved their existing shelf-based system by making sliding trays that would integrate seamlessly with the oven's existing hardware and mounting points."
 
 author:
   name: Karri Saarinen

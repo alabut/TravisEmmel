@@ -1,11 +1,11 @@
 ---
 layout: post
 
-title: Happy Birthday To Me
+title: Halogen to LED Lamp Conversion
 subtitle: "Birth of a fancy blog"
 cover_image: blog-cover.jpg
 
-excerpt: "Still struggling to get the first version working..."
+excerpt: "This project was born out of the demise of a standard halogen torch lamp. With the fixture no longer working, I decided this would be a prime opportunity to recycle the lamp and go a little greener in the process."
 
 author:
   name: Karri Saarinen
