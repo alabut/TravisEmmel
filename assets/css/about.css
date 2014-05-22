@@ -9,6 +9,10 @@
     top: auto;
 }
 
+.container .index {
+  margin-top: 0;
+}
+
 article h1 {
   margin: 0;
 }
@@ -17,4 +21,14 @@ article hr {
   border-color: #2A6496;
   margin: 20px 0 0;
   opacity: 0.3;
+}
+
+.avatar-big {
+  text-align: center;
+}
+
+.avatar-big img {
+  border: 10px solid #EEE;
+  border-radius: 50%;
+  margin: 0;
 }
