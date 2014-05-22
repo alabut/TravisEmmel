@@ -8,3 +8,13 @@
     padding: 20px 0 30px;
     top: auto;
 }
+
+article h1 {
+  margin: 0;
+}
+
+article hr {
+  border-color: #2A6496;
+  margin: 20px 0 0;
+  opacity: 0.3;
+}
