@@ -1,7 +1,8 @@
 TRAV'S WEBSITE
+* copy his content over to the posts
+* add cover photos to each project on the index page
 * more blatant links to resume and etc on the about page, below the bio
 * move the about page to the home and list the projects below it
 * footer info
 * linkedin logo in footer
-* add a mailto: link to the contact button in the nav
-* copy his content over to the posts
+* add a filled-in hover state to the contact button in the nav

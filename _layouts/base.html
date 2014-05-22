@@ -37,16 +37,18 @@
     <header>
         <nav id="navigation">
             <a class="brand" href="{{ site.baseurl}}/">
-                <img src="{{ site.baseurl}}/images/{{ site.inc.logo }}" alt="Inc">
+                <img src="{{ site.baseurl}}/images/{{ site.inc.logo }}" alt="" style="border-radius: 3px;
+height: 35px;
+width: 93px;
+margin-top: 0;">
             </a>
-            <a href="{{ site.baseurl}}/" class="home">Projects</a>
-            <a href="{{ site.baseurl}}/about" class="home">About Me</a>
+            <a href="{{ site.baseurl}}/" class="home">About &amp; Projects</a>
             <a href="{{ site.baseurl}}/resume.pdf" class="home">Resume (PDF)</a>
         </nav>
         {% if site.inc.tagline or site.inc.product_url %}
         <nav class="tagline">
             {% if site.inc.tagline %}<span>{{ site.inc.tagline }}</span>{% endif %}
-            <a href="mailto:reallifeonhold@gmail.com" class="btn btn-outline">Email Me</a>
+            <a href="mailto:travis.emmel@gmail.com" class="btn btn-outline">Email Me</a>
         </nav>
         {% endif %}
     </header>

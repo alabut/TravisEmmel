@@ -20,8 +20,8 @@ layout: base
     <section class="index">
         <h1>Projects:</h1>
     </section>
-{% for post in paginator.posts %}
-  {% unless post.draft %}
+    {% for post in paginator.posts %}
+    {% unless post.draft %}
     <section class="index">
         <!-- {% if post.author.image %}<img src="{{ site.baseurl}}/images/{{ post.author.image }}" class="avatar">{% endif %}-->
         <div>

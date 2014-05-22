@@ -9,7 +9,7 @@ extra_css:
     <section>
         <div class="container">
             <h1>Yup, that's me with Johnny Carson.</h1>
-            {% if site.inc.subtitle %}<h3>Second from the right, in the suspenders.</h3>{% endif %}
+            <h3>(second from the right, in suspenders)</h3>
         </div>
     </section>
 </div>
@@ -22,5 +22,26 @@ extra_css:
             <p><strong>And I've been making stuff ever since.</strong></p>
             <p>I've always been a tinker. From my time as a child, dissecting every toy in my possession, to becoming a teenager and turning a wrench on each bolt on my car, to owning a house and working my way through a seemingly endless barrage of home improvement projects, I’ve always been one to explore my creative and mechanical sides and have never been afraid to get my hands dirty.</p>
         </div>
+        <hr>
     </section>
+    <section class="index">
+        <h1>Projects:</h1>
+    </section>
+    {% for post in site.posts %}
+    {% unless post.draft %}
+    <section class="index">
+        <!-- {% if post.author.image %}<img src="{{ site.baseurl}}/images/{{ post.author.image }}" class="avatar">{% endif %}-->
+        <div>
+            <h2 class="title"><a href="{{ site.baseurl}}{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
+            <p style="margin-bottom: 0.6em;">{{ post.excerpt }}</p>
+            <p><a href="{{ site.baseurl}}{{ post.url }}" rel="prefetch" style="background: #2A6496;
+border-radius: 50px;
+color: #FFF;
+font-size: 14px;
+padding: 5px 10px;">READ MORE</a></p>
+        </div>
+        <hr>
+    </section>
+    {% endunless %}
+    {% endfor %}
 </article>
