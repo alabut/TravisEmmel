@@ -1,0 +1,3 @@
+.article-cover, .blog-cover, .article-cover>div, .blog-cover>div {
+  max-height: 100%;
+}
