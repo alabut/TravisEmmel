@@ -9,3 +9,11 @@
   }
   
 }
+
+@media (max-width: 640px) {
+  
+  iframe {
+    max-height: 320px;
+  }
+  
+}
