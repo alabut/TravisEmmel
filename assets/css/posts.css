@@ -1,3 +1,11 @@
 .article-cover, .blog-cover, .article-cover>div, .blog-cover>div {
   max-height: 100%;
 }
+
+@media (max-width: 1000px) {
+  
+  iframe {
+    max-width: 100%;
+  }
+  
+}
