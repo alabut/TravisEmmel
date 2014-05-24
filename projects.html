@@ -1,5 +1,7 @@
 ---
 layout: base
+extra_css:
+  - about.css
 ---
 
 <div class="blog-cover" style="background-image:url('http://fourandthree.com/assets/img/levin-mejia-about.jpg');">
@@ -20,28 +22,21 @@ layout: base
     <section class="index">
         <h1>Projects:</h1>
     </section>
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
     {% unless post.draft %}
     <section class="index">
         <!-- {% if post.author.image %}<img src="{{ site.baseurl}}/images/{{ post.author.image }}" class="avatar">{% endif %}-->
         <div>
             <h2 class="title"><a href="{{ site.baseurl}}{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
-            <p>{{ post.excerpt }}</p>
+            <p style="margin-bottom: 0.6em;">{{ post.excerpt }}</p>
+            <p><a href="{{ site.baseurl}}{{ post.url }}" rel="prefetch" style="background: #2A6496;
+border-radius: 50px;
+color: #FFF;
+font-size: 14px;
+padding: 5px 10px;">READ MORE</a></p>
         </div>
         <hr>
     </section>
     {% endunless %}
     {% endfor %}
-    <section class="pagination" style="text-align:center">
-      {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <a href="{{ site.baseurl}}/" class="btn btn-outline">‹ Newer</a>
-        {% else %}
-        <a href="{{ site.baseurl}}/page{{ paginator.previous_page }}" class="btn btn-outline">‹ Newer</a>
-        {% endif %}
-      {% endif %}
-      {% if paginator.next_page %}
-        <a href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="btn btn-outline">Older ›</a>
-      {% endif %}
-    </section>
 </article>
